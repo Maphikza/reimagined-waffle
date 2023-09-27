@@ -18,7 +18,7 @@ def clean_out_directory(dir_path: Path) -> bool:
 
 
 if __name__ == "__main__":
-    pasted_path = Path(input("Supply the path to the pdf document that you would like to extract text from."))
+    pasted_path = Path(input("Supply the path to the pdf document that you would like to extract text from.\n-"))
     if pasted_path.is_file() and str(pasted_path).endswith('.pdf') and not pasted_path.is_dir():
         chosen_path = pasted_path
         pdf_path = pasted_path
